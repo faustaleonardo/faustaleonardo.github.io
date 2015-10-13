@@ -119,7 +119,10 @@ body{
 		font-weight: 300;
 		margin-bottom: 55px;
 		color: $white;
-	}
+	}	
+}
+
+.portfolio-loop{
 
 	.portfolio-item{
 		position: relative;
@@ -163,27 +166,27 @@ body{
 		.desc{
 			margin-top: 20px;
 		}
-
-		.portfolio-more{
-			margin-top: 30px;
-			font-size: 20px;
-
-			a{
-				color: $white;
-				text-decoration: none;
-
-				&:hover, &:focus{
-					color: #e7edec;
-					text-decoration: none;
-				}
-			}
-		}
 	}
 
 	a, a:hover, a:focus{
 		color: #454442;
 		text-decoration: none;
-	}	
+	}
+}
+
+.portfolio-more{
+	margin-top: 30px;
+	font-size: 20px;
+
+	a{
+		color: $white;
+		text-decoration: none;
+
+		&:hover, &:focus{
+			color: #e7edec;
+			text-decoration: none;
+		}
+	}
 }
 
 // END: PORTFOLIO

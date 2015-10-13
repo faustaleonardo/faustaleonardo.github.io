@@ -69,45 +69,47 @@ body {
     font-weight: 300;
     margin-bottom: 55px;
     color: #FFFFFF; }
-  .portfolio .portfolio-item {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 30px; }
-    .portfolio .portfolio-item .thumb .thumb-img {
-      width: 100%;
-      height: auto; }
-    .portfolio .portfolio-item .caption {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      opacity: 0;
-      -webkit-transition: all 0.4s ease 0s;
-      -moz-transition: all 0.4s ease 0s;
-      -o-transition: all 0.4s ease 0s;
-      transition: all 0.4s ease 0s; }
-    .portfolio .portfolio-item:hover .caption {
-      opacity: 1; }
-    .portfolio .portfolio-item .title {
-      font-size: 18px;
-      font-weight: 500; }
-    .portfolio .portfolio-item .desc {
-      margin-top: 20px; }
-    .portfolio .portfolio-item .portfolio-more {
-      margin-top: 30px;
-      font-size: 20px; }
-      .portfolio .portfolio-item .portfolio-more a {
-        color: #FFFFFF;
-        text-decoration: none; }
-        .portfolio .portfolio-item .portfolio-more a:hover, .portfolio .portfolio-item .portfolio-more a:focus {
-          color: #e7edec;
-          text-decoration: none; }
-  .portfolio a, .portfolio a:hover, .portfolio a:focus {
-    color: #454442;
+
+.portfolio-loop .portfolio-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .portfolio-loop .portfolio-item .thumb .thumb-img {
+    width: 100%;
+    height: auto; }
+  .portfolio-loop .portfolio-item .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s; }
+  .portfolio-loop .portfolio-item:hover .caption {
+    opacity: 1; }
+  .portfolio-loop .portfolio-item .title {
+    font-size: 18px;
+    font-weight: 500; }
+  .portfolio-loop .portfolio-item .desc {
+    margin-top: 20px; }
+.portfolio-loop a, .portfolio-loop a:hover, .portfolio-loop a:focus {
+  color: #454442;
+  text-decoration: none; }
+
+.portfolio-more {
+  margin-top: 30px;
+  font-size: 20px; }
+  .portfolio-more a {
+    color: #FFFFFF;
     text-decoration: none; }
+    .portfolio-more a:hover, .portfolio-more a:focus {
+      color: #e7edec;
+      text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
