@@ -1,2 +1,2 @@
 # faustaleonardo.github.io
-Welcome to my first portfolio. 
+Learning to make my own portfolio from prototype.
