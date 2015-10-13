@@ -5,20 +5,32 @@ $light-blue: #2abbae;
 $white: #FFFFFF;
 
 //MIXIN
-@mixin background-size(){
+@mixin background-size{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
-@mixin transition(){
+@mixin transition{
 	-webkit-transition: all 0.4s ease 0s;
 	-moz-transition: all 0.4s ease 0s;
 	-o-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s;
 }
+@mixin border-radius{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+}
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+  &:-moz-placeholder           {@content}  
+}
 
-// GENERAL
+/* GENERAL */
 body{
 	color: #656565;
 	font-family: 'Roboto', sans-serif;
@@ -28,15 +40,15 @@ body{
 .container{
 	max-width: 1060px;
 }
-// END: GENERAL
+/* END: GENERAL */
 
-// TEXT
+/* TEXT */
 .text-color-primary{
 	color: $light-blue;
 }
-// END: TEXT
+/* END: TEXT */
 
-// HEADER
+/* HEADER */
 .header-cover{
 	height: 650px;
 	background: url(../img/file_gambar/cover_header.jpg) no-repeat bottom center;
@@ -78,9 +90,9 @@ body{
 		}
 	}
 }
-// END: HEADER
+/* END: HEADER */
 
-// ABOUT
+/* ABOUT */
 .about{
 	padding-top: 100px;
 	padding-bottom: 250px;
@@ -99,10 +111,9 @@ body{
 		}		
 	}
 }
+/* END: ABOUT */
 
-// END: ABOUT
-
-// PORTFOLIO
+/* PORTFOLIO */
 .portfolio{
 	background: $light-blue;
 	padding: 100px 0px;
@@ -188,5 +199,90 @@ body{
 		}
 	}
 }
+/* END: PORTFOLIO */
 
-// END: PORTFOLIO
+/* CONTACT */
+
+.contact{
+	background: #1b1e25;
+	color: $white;
+	padding: 100px 0px;
+
+	.contact-social-media{
+		margin-bottom: 40px;
+	}
+
+	h2{
+		font-size: 45px;
+		font-weight: 300;
+		margin-bottom: 50px;
+
+		strong{
+			font-weight: 600;
+		}
+	}
+	
+	p{
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	.contact-item{
+		font-size: 16px;
+		margin-bottom: 20px;
+
+		.contact-icon{
+			font-size: 20px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.contact-form{
+
+	.form-group{
+		margin-bottom: 25px;
+	}
+
+	.form-control{
+		background: transparent;
+		border: 1px solid $white;
+		@include border-radius;
+		font-size: 18px;
+		color: $white;
+	}
+
+	input.form-control{
+		height: 55px;
+		line-height: 55px;
+	}
+	
+	.form-control{
+		@include placeholder{
+			color: $white;
+		}
+	}
+}
+
+.btn{
+	.btn-default{
+		@include border-radius;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.btn-lg{
+		height: 60px;
+		line-height: 60px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+}
+/* END: CONTACT */
+
+/* FOOTER */
+.footer{
+	background: #0d0e11;
+	color: $white;
+	padding: 20px 0px;
+}
+/* END: FOOTER */
