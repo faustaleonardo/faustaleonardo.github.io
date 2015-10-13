@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700);
+body {
+  color: #656565;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; }
+
+.container {
+  max-width: 1060px; }
+
+.text-color-primary {
+  color: #2abbae; }
+
+.header-cover {
+  height: 650px;
+  background: url(../img/file_gambar/cover_header.jpg) no-repeat bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative; }
+  .header-cover .button-area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 50px; }
+    .header-cover .button-area a {
+      color: #2abbae;
+      text-decoration: none; }
+      .header-cover .button-area a:hover, .header-cover .button-area a:focus {
+        color: #209f94;
+        text-decoration: none; }
+
+.header-inner, .header-cover {
+  padding-top: 200px;
+  text-align: center;
+  color: #FFFFFF; }
+  .header-inner h1, .header-cover h1 {
+    font-weight: 300;
+    font-size: 45px; }
+    .header-inner h1 strong, .header-cover h1 strong {
+      font-weight: 500; }
+
+/*# sourceMappingURL=style.css.map */
