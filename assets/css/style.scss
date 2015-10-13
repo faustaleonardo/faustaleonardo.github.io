@@ -21,11 +21,13 @@ body{
 .container{
 	max-width: 1060px;
 }
+// END: GENERAL
 
 // TEXT
 .text-color-primary{
 	color: $light-blue;
 }
+// END: TEXT
 
 // HEADER
 .header-cover{
@@ -69,3 +71,26 @@ body{
 		}
 	}
 }
+// END: HEADER
+
+// ABOUT
+.about{
+	padding-top: 100px;
+	padding-bottom: 250px;
+	background: #f0f0f0 url(../img/file_gambar/bg_about_2.png) no-repeat bottom right;
+	font-size: 16px;
+
+	h2{
+		font-weight: 300;
+		margin-bottom: 30px;
+
+		strong{
+			font-weight: 500;
+		}
+		p{
+			margin-bottom: 30px;
+		}		
+	}
+}
+
+// END: ABOUT

@@ -43,4 +43,17 @@ body {
     .header-inner h1 strong, .header-cover h1 strong {
       font-weight: 500; }
 
+.about {
+  padding-top: 100px;
+  padding-bottom: 250px;
+  background: #f0f0f0 url(../img/file_gambar/bg_about_2.png) no-repeat bottom right;
+  font-size: 16px; }
+  .about h2 {
+    font-weight: 300;
+    margin-bottom: 30px; }
+    .about h2 strong {
+      font-weight: 500; }
+    .about h2 p {
+      margin-bottom: 30px; }
+
 /*# sourceMappingURL=style.css.map */
