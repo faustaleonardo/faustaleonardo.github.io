@@ -1,34 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700);
 
-//VARIABEL
-$light-blue: #2abbae;
-$white: #FFFFFF;
+//VARIABLE
+@import "scss/variable";
 
 //MIXIN
-@mixin background-size{
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-@mixin transition{
-	-webkit-transition: all 0.4s ease 0s;
-	-moz-transition: all 0.4s ease 0s;
-	-o-transition: all 0.4s ease 0s;
-	transition: all 0.4s ease 0s;
-}
-@mixin border-radius{
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	-o-border-radius: 0px;
-	border-radius: 0px;
-}
-@mixin placeholder {
-  &::-webkit-input-placeholder {@content}
-  &::-moz-placeholder          {@content}
-  &:-ms-input-placeholder      {@content}  
-  &:-moz-placeholder           {@content}  
-}
+@import "scss/mixin";
 
 /* GENERAL */
 body{
@@ -286,3 +262,14 @@ body{
 	padding: 20px 0px;
 }
 /* END: FOOTER */
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+	.header-inner{
+
+		h1{
+			font-size: 30px;
+		}
+	}	
+}
+/* END: RESPONSIVE */

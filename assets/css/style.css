@@ -189,5 +189,10 @@ body {
   padding: 20px 0px; }
 
 /* END: FOOTER */
+/* RESPONSIVE */
+@media (max-width: 767px) {
+  .header-inner h1, .header-cover h1 {
+    font-size: 30px; } }
+/* END: RESPONSIVE */
 
 /*# sourceMappingURL=style.css.map */
