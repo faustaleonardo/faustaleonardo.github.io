@@ -32,11 +32,17 @@ img{
 		background-color: rgba(46, 65, 82, 0.5);
 		.header-content{
 			width: 640px;
-			.logo{
-				width: 100px;
-				border-radius: 50%;
-				display: block;	
+			.logo-container{
+				text-align: center;
 				margin: 0 auto 20px;
+				.logo-link{
+					display: inline-block;
+					border-radius: 50%;
+					img{
+						border-radius: 50%;
+						width: 100px;
+					}
+				}
 			}
 			.author-container{
 				display: flex;

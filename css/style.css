@@ -25,11 +25,15 @@ img {
     background-color: rgba(46, 65, 82, 0.5); }
     .header-portfolio .header-tint .header-content {
       width: 640px; }
-      .header-portfolio .header-tint .header-content .logo {
-        width: 100px;
-        border-radius: 50%;
-        display: block;
+      .header-portfolio .header-tint .header-content .logo-container {
+        text-align: center;
         margin: 0 auto 20px; }
+        .header-portfolio .header-tint .header-content .logo-container .logo-link {
+          display: inline-block;
+          border-radius: 50%; }
+          .header-portfolio .header-tint .header-content .logo-container .logo-link img {
+            border-radius: 50%;
+            width: 100px; }
       .header-portfolio .header-tint .header-content .author-container {
         display: flex;
         justify-content: center;
