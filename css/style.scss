@@ -20,6 +20,7 @@ img{
 	background-image: url('../img/bg.jpg');
 	background-position: top center;
 	background-attachment: fixed;
+	margin-bottom: 80px;
 	.header-tint{
 		position: absolute;
 		top: 0;
@@ -50,18 +51,19 @@ img{
 				align-items: center;		
 				margin-bottom: 20px;		
 				.author{
+					font-weight: bold;
 					text-transform: uppercase;
 					border: 3px solid $white;
 					padding: 4px 8px;
 					color: $white;
-					font-size: 2.5em;
+					font-size: 2.15em;
 				}
 			}
 			.professions{
 				text-align: center;
 				color: white;
 				text-transform: uppercase;
-				font-size: 1.5em;	
+				font-size: 1.15em;	
 				margin-bottom: 20px;
 			}
 			.header-social{
@@ -77,6 +79,97 @@ img{
 					transition: all 0.3s ease-in-out;
 					&:hover{
 						background-color: $pink;
+					}
+				}
+			}
+		}
+	}
+}
+
+.section-content{
+	position: relative;
+	padding: 0 10px;
+	max-width: 1020px;
+	margin: 0 auto;
+	color: $super_dark_grey;
+	.article-about-me{
+		h3{
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		hr{
+		    border-top: 3px solid $super_dark_grey;
+		    width: 60px;			
+		}
+		p{
+			text-align: justify;
+			font-weight: normal;
+		}
+		.paragraph-focus{
+			font-weight: bold;
+		}
+		.about-me-container{
+			margin: 0 auto;
+			max-width: 640px;
+			.sub-title{
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+			}			
+			.personal-details{
+				margin-bottom: 2.5rem;
+				.table-personal-details{
+					margin: 0 auto;
+					td{
+						border-bottom: 0;
+						padding: 0 0 10px;
+						&:nth-child(2){
+							padding: 0 5px 10px;
+						}
+					}
+					.label-title{
+						font-weight: bold;
+					}
+				}
+			}
+			.hobby-interests{
+				.hobby-interests-row{
+					color: $grey;
+					figure{
+						margin-bottom: 20px;
+						opacity: 0;
+						transform: translateX(-20px);
+						transition: all 0.3s ease-in-out;
+						&.is-showing{
+							opacity: 1;
+							transform: translateX(0px);
+						}
+						.hobbies-interests-container{
+							width: 100px;
+							height: 100px;
+							background: $super_dark_grey;
+							border-radius: 50%;
+							margin: 0 auto;
+							position: relative;
+							.icon-container{
+								position: absolute;
+								width: 100px;
+								left: 50%;
+								margin-left: -50px;
+								top: 50%;
+								margin-top: -25px;
+								img{
+									display: block;
+									width: 30px;
+									margin: 0 auto 3px;
+								}
+								figcaption{
+									color: $grey;
+									text-align: center;
+								}
+							}
+						}
 					}
 				}
 			}
