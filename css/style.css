@@ -138,7 +138,8 @@ img {
     background-color: #f4f4f4;
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 80px; }
+    padding-bottom: 80px;
+    margin-bottom: 80px; }
     .section-content .article-resume h3 {
       text-align: center;
       text-transform: uppercase;
@@ -170,7 +171,7 @@ img {
         .section-content .article-resume .resume-container figure .vertical-line {
           border-right: 3px solid #cccccc;
           height: 30px;
-          width: 320px; }
+          width: 50%; }
         .section-content .article-resume .resume-container figure .icon-resume {
           padding: 7px;
           border-radius: 50%;
@@ -186,5 +187,50 @@ img {
           background-color: #fb005b; }
         .section-content .article-resume .resume-container figure p {
           margin-bottom: 0; }
+  .section-content .article-my-services {
+    text-align: center; }
+    .section-content .article-my-services h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .section-content .article-my-services hr {
+      border-top: 3px solid #2e4152;
+      width: 60px; }
+    .section-content .article-my-services .my-services-container {
+      max-width: 640px;
+      margin: 0 auto;
+      position: relative; }
+      .section-content .article-my-services .my-services-container .my-services-row figure {
+        margin-bottom: 3.5rem;
+        opacity: 0;
+        transform: translateX(20px);
+        transition: all 0.3s ease-in-out; }
+        .section-content .article-my-services .my-services-container .my-services-row figure.is-showing {
+          opacity: 1;
+          transform: translateX(0px); }
+        .section-content .article-my-services .my-services-container .my-services-row figure .detail-services-container {
+          width: 200px;
+          height: 200px;
+          background: #fb005b;
+          border-radius: 5px;
+          margin: 0 auto;
+          position: relative; }
+          .section-content .article-my-services .my-services-container .my-services-row figure .detail-services-container .icon-services-container {
+            position: absolute;
+            width: 200px;
+            left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -50px; }
+            .section-content .article-my-services .my-services-container .my-services-row figure .detail-services-container .icon-services-container img {
+              display: block;
+              width: 60px;
+              margin: 0 auto 3px; }
+            .section-content .article-my-services .my-services-container .my-services-row figure .detail-services-container .icon-services-container figcaption {
+              color: #ffffff;
+              text-align: center;
+              text-transform: uppercase;
+              font-weight: bold;
+              font-size: 2.4rem; }
 
 /*# sourceMappingURL=style.css.map */

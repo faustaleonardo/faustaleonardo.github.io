@@ -24,5 +24,16 @@ $(document).ready(function(){
 				}, 200 * (i+1));
 			});
 		}		
+
+		// animation for my services
+		if (wScroll > ($('.my-services-container').offset().top - $(window).height() / 1.2)){
+			// i starts with 0
+			$('.my-services-container figure').each(function(i){
+				setTimeout(function(){
+					// eq means index
+					$('.my-services-container figure').eq(i).addClass('is-showing');
+				}, 150 * (i+1));
+			});
+		}		
 	});
 });
