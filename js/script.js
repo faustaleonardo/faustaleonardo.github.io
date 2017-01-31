@@ -13,5 +13,16 @@ $(document).ready(function(){
 				}, 150 * (i+1));
 			});
 		}		
+
+		// animation for resume
+		if (wScroll > ($('.resume-container').offset().top - $(window).height() / 1.2)){
+			// i starts with 0
+			$('.resume-container figure').each(function(i){
+				setTimeout(function(){
+					// eq means index
+					$('.resume-container figure').eq(i).addClass('is-showing');
+				}, 200 * (i+1));
+			});
+		}		
 	});
 });
