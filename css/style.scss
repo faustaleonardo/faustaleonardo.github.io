@@ -3,6 +3,7 @@ $grey: #f4f4f4;
 $dark_grey: #98a1aa;
 $super_dark_grey: #2e4152;
 $white: #ffffff;
+$normal_grey: #cccccc;
 
 body{
 	font-family: "Open Sans", sans-serif;
@@ -88,11 +89,11 @@ img{
 
 .section-content{
 	position: relative;
-	padding: 0 10px;
-	max-width: 1020px;
-	margin: 0 auto;
 	color: $super_dark_grey;
 	.article-about-me{
+		max-width: 640px;
+		padding: 0 10px;
+		margin: 0 auto 80px;
 		h3{
 			text-align: center;
 			text-transform: uppercase;
@@ -111,7 +112,6 @@ img{
 		}
 		.about-me-container{
 			margin: 0 auto;
-			max-width: 640px;
 			.sub-title{
 				text-align: center;
 				text-transform: uppercase;
@@ -174,5 +174,40 @@ img{
 				}
 			}
 		}
+	}
+	.article-resume{
+		background-color: $grey;
+		text-align: center;
+		h3{
+			padding-top: 80px;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		hr{
+		    border-top: 3px solid $super_dark_grey;
+		    width: 60px;			
+		}
+		.resume-container{
+			max-width: 640px;
+			margin: 0 auto;
+			position: relative; 
+			h5{
+				border-radius: 5px;
+				display: inline-block;
+				background-color: $normal_grey;
+				color: $super_dark_grey;
+				padding: 7px 14px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			.vertical-line{
+				border-right: 3px solid $normal_grey;
+				height: 20px;
+				position: absolute;
+				top: 70%;
+				left: 50%;
+			}
+		}	
 	}
 }

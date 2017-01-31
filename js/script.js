@@ -3,6 +3,7 @@ $(document).ready(function(){
 
 		var wScroll = $(this).scrollTop();
 
+		// animation for hobbies & interests
 		if (wScroll > ($('.hobby-interests-row').offset().top - $(window).height() / 1.2)){
 			// i starts with 0
 			$('.hobby-interests-row figure').each(function(i){

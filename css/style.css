@@ -69,70 +69,99 @@ img {
 
 .section-content {
   position: relative;
-  padding: 0 10px;
-  max-width: 1020px;
-  margin: 0 auto;
   color: #2e4152; }
-  .section-content .article-about-me h3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold; }
-  .section-content .article-about-me hr {
-    border-top: 3px solid #2e4152;
-    width: 60px; }
-  .section-content .article-about-me p {
-    text-align: justify;
-    font-weight: normal; }
-  .section-content .article-about-me .paragraph-focus {
-    font-weight: bold; }
-  .section-content .article-about-me .about-me-container {
-    margin: 0 auto;
-    max-width: 640px; }
-    .section-content .article-about-me .about-me-container .sub-title {
+  .section-content .article-about-me {
+    max-width: 640px;
+    padding: 0 10px;
+    margin: 0 auto 80px; }
+    .section-content .article-about-me h3 {
       text-align: center;
       text-transform: uppercase;
       font-weight: bold; }
-    .section-content .article-about-me .about-me-container .personal-details {
-      margin-bottom: 2.5rem; }
-      .section-content .article-about-me .about-me-container .personal-details .table-personal-details {
-        margin: 0 auto; }
-        .section-content .article-about-me .about-me-container .personal-details .table-personal-details td {
-          border-bottom: 0;
-          padding: 0 0 10px; }
-          .section-content .article-about-me .about-me-container .personal-details .table-personal-details td:nth-child(2) {
-            padding: 0 5px 10px; }
-        .section-content .article-about-me .about-me-container .personal-details .table-personal-details .label-title {
-          font-weight: bold; }
-    .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row {
-      color: #f4f4f4; }
-      .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure {
-        margin-bottom: 20px;
-        opacity: 0;
-        transform: translateX(-20px);
-        transition: all 0.3s ease-in-out; }
-        .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure.is-showing {
-          opacity: 1;
-          transform: translateX(0px); }
-        .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure .hobbies-interests-container {
-          width: 100px;
-          height: 100px;
-          background: #2e4152;
-          border-radius: 50%;
-          margin: 0 auto;
-          position: relative; }
-          .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure .hobbies-interests-container .icon-container {
-            position: absolute;
+    .section-content .article-about-me hr {
+      border-top: 3px solid #2e4152;
+      width: 60px; }
+    .section-content .article-about-me p {
+      text-align: justify;
+      font-weight: normal; }
+    .section-content .article-about-me .paragraph-focus {
+      font-weight: bold; }
+    .section-content .article-about-me .about-me-container {
+      margin: 0 auto; }
+      .section-content .article-about-me .about-me-container .sub-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold; }
+      .section-content .article-about-me .about-me-container .personal-details {
+        margin-bottom: 2.5rem; }
+        .section-content .article-about-me .about-me-container .personal-details .table-personal-details {
+          margin: 0 auto; }
+          .section-content .article-about-me .about-me-container .personal-details .table-personal-details td {
+            border-bottom: 0;
+            padding: 0 0 10px; }
+            .section-content .article-about-me .about-me-container .personal-details .table-personal-details td:nth-child(2) {
+              padding: 0 5px 10px; }
+          .section-content .article-about-me .about-me-container .personal-details .table-personal-details .label-title {
+            font-weight: bold; }
+      .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row {
+        color: #f4f4f4; }
+        .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure {
+          margin-bottom: 20px;
+          opacity: 0;
+          transform: translateX(-20px);
+          transition: all 0.3s ease-in-out; }
+          .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure.is-showing {
+            opacity: 1;
+            transform: translateX(0px); }
+          .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure .hobbies-interests-container {
             width: 100px;
-            left: 50%;
-            margin-left: -50px;
-            top: 50%;
-            margin-top: -25px; }
-            .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure .hobbies-interests-container .icon-container img {
-              display: block;
-              width: 30px;
-              margin: 0 auto 3px; }
-            .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure .hobbies-interests-container .icon-container figcaption {
-              color: #f4f4f4;
-              text-align: center; }
+            height: 100px;
+            background: #2e4152;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative; }
+            .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure .hobbies-interests-container .icon-container {
+              position: absolute;
+              width: 100px;
+              left: 50%;
+              margin-left: -50px;
+              top: 50%;
+              margin-top: -25px; }
+              .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure .hobbies-interests-container .icon-container img {
+                display: block;
+                width: 30px;
+                margin: 0 auto 3px; }
+              .section-content .article-about-me .about-me-container .hobby-interests .hobby-interests-row figure .hobbies-interests-container .icon-container figcaption {
+                color: #f4f4f4;
+                text-align: center; }
+  .section-content .article-resume {
+    background-color: #f4f4f4;
+    text-align: center; }
+    .section-content .article-resume h3 {
+      padding-top: 80px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .section-content .article-resume hr {
+      border-top: 3px solid #2e4152;
+      width: 60px; }
+    .section-content .article-resume .resume-container {
+      max-width: 640px;
+      margin: 0 auto;
+      position: relative; }
+      .section-content .article-resume .resume-container h5 {
+        border-radius: 5px;
+        display: inline-block;
+        background-color: #cccccc;
+        color: #2e4152;
+        padding: 7px 14px;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .section-content .article-resume .resume-container .vertical-line {
+        border-right: 3px solid #cccccc;
+        height: 20px;
+        position: absolute;
+        top: 70%;
+        left: 50%; }
 
 /*# sourceMappingURL=style.css.map */
