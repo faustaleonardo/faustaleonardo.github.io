@@ -297,4 +297,26 @@ img{
 			}
 		}
 	}
+	.article-skills{
+		background-color: $grey;
+		text-align: center;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		margin-top: 40px;
+		margin-bottom: 80px;
+		h3, .sub-title{
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		hr{
+		    border-top: 3px solid $super_dark_grey;
+		    width: 60px;			
+		}
+		.skills-container{
+			max-width: 640px;
+			margin: 0 auto;
+			position: relative; 
+		}
+	}	
 }

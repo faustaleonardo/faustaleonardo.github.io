@@ -232,5 +232,23 @@ img {
               text-transform: uppercase;
               font-weight: bold;
               font-size: 2.4rem; }
+  .section-content .article-skills {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 80px; }
+    .section-content .article-skills h3, .section-content .article-skills .sub-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .section-content .article-skills hr {
+      border-top: 3px solid #2e4152;
+      width: 60px; }
+    .section-content .article-skills .skills-container {
+      max-width: 640px;
+      margin: 0 auto;
+      position: relative; }
 
 /*# sourceMappingURL=style.css.map */
