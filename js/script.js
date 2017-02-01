@@ -32,7 +32,7 @@ $(document).ready(function(){
 				setTimeout(function(){
 					// eq means index
 					$('.my-services-container figure').eq(i).addClass('is-showing');
-				}, 150 * (i+1));
+				}, 300 * (i+1));
 			});
 		}
 

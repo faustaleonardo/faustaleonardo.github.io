@@ -316,47 +316,53 @@ img {
             .section-content .article-my-works .my-works-container .my-works-row .my-works .my-detail-works .btn-visit:hover {
               color: #ffffff;
               background-color: #fb005b; }
-  .section-content .article-contact {
-    background-color: #f4f4f4;
+
+footer {
+  background-color: #2e4152;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  margin-top: 40px; }
+  footer h3, footer .sub-title {
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin-top: 40px;
-    margin-bottom: 80px; }
-    .section-content .article-contact h3, .section-content .article-contact .sub-title {
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold; }
-    .section-content .article-contact .sub-title {
+    text-transform: uppercase;
+    font-weight: bold; }
+  footer .sub-title {
+    margin-bottom: 3.5rem; }
+  footer hr {
+    border-top: 3px solid #ffffff;
+    width: 60px; }
+  footer .contact-container {
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative; }
+    footer .contact-container .contact-row {
       margin-bottom: 3.5rem; }
-    .section-content .article-contact hr {
-      border-top: 3px solid #2e4152;
-      width: 60px; }
-    .section-content .article-contact .contact-container {
-      max-width: 640px;
-      margin: 0 auto;
-      position: relative; }
-      .section-content .article-contact .contact-container .contact-row {
-        margin-bottom: 10px; }
-        .section-content .article-contact .contact-container .contact-row .detail-icon-contact {
-          margin: 0 auto;
-          border-radius: 5px;
-          width: 70px;
-          height: 70px;
-          background: #fb005b;
-          display: flex;
-          align-items: center;
-          justify-content: center; }
-          .section-content .article-contact .contact-container .contact-row .detail-icon-contact img {
-            width: 25px;
-            display: block;
-            margin: 0 auto; }
-        .section-content .article-contact .contact-container .contact-row h5 {
-          text-transform: uppercase;
-          display: inline-block;
-          font-weight: bold;
-          margin-top: 10px;
-          margin-bottom: 0; }
+      footer .contact-container .contact-row .detail-icon-contact {
+        margin: 0 auto;
+        border-radius: 5px;
+        width: 70px;
+        height: 70px;
+        background: #fb005b;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        footer .contact-container .contact-row .detail-icon-contact img {
+          width: 25px;
+          display: block;
+          margin: 0 auto; }
+      footer .contact-container .contact-row h5 {
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 0; }
+  footer .footer-info {
+    margin-bottom: 2px;
+    font-size: 0.8em; }
+    footer .footer-info img {
+      width: 12px; }
 
 @media (max-width: 549px) {
   .section-content .article-skills .skills-container .skills-row .label-skills-columns .label-skills {
