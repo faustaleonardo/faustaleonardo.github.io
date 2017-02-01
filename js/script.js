@@ -51,5 +51,17 @@ $(document).ready(function(){
 			});
 		}
 
+		// animation for my works
+		if (wScroll > ($('.my-works-row').offset().top - $(window).height() / 1.2)){
+			// i starts with 0
+			$('.my-works').each(function(i){
+				setTimeout(function(){
+					if (!$('.my-works').eq(i).hasClass('animation_complete')){
+						$('.my-works').eq(i).fadeIn('slow');
+					}
+				}, 200 * (i+1));
+			});
+		}
+
 	});
 });

@@ -4,6 +4,7 @@ $dark_grey: #98a1aa;
 $super_dark_grey: #2e4152;
 $white: #ffffff;
 $normal_grey: #cccccc;
+$border_grey: #e1e1e1;
 
 body{
 	font-family: "Open Sans", sans-serif;
@@ -368,29 +369,34 @@ img{
 			margin: 0 auto;
 			position: relative; 
 			.my-works-row{
-				figure{
+				.my-works{
 					margin-bottom: 3.5rem;
-					a{
-					    width: 200px;
-					    height: 200px;
-					    border: 1px solid $pink;
-					    margin: 0 auto;
-					    border-radius: 10px;
-					    display: flex;
-					    align-items: center;
-					    justify-content: center;
-					    img{
-						    transform: scale(1);
-						    transition: all 0.3s ease-in-out; 
-						    width: 120px;
-					    }
-					    &:hover{
-					    	background-color: $grey;
+					background-color: white;
+					position: relative;
+					display: none;
+				    .my-detail-works{
+					    border: 1px solid $border_grey;
+					    margin: 0 10px;
+					    .link-image{
+					    	display: block;
+					    	margin-bottom: 40px;
 					    	img{
-					    		transform: scale(1.2);
+						    	height: auto;
+					    		display: block;
 					    	}
 					    }
-					}
+					    .btn-visit{
+					    	border: none;
+				    		background-color: $super_dark_grey;
+					    	color: $white;
+					    	font-weight: bold;
+					    	transition: all 0.3s ease-in-out;
+					    	&:hover{
+					    		color: $white;
+						    	background-color: $pink;
+					    	}
+					    }
+				    }
 				}
 			}
 		}

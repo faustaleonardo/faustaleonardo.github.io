@@ -285,25 +285,29 @@ img {
       max-width: 640px;
       margin: 0 auto;
       position: relative; }
-      .section-content .article-my-works .my-works-container .my-works-row figure {
-        margin-bottom: 3.5rem; }
-        .section-content .article-my-works .my-works-container .my-works-row figure a {
-          width: 200px;
-          height: 200px;
-          border: 1px solid #fb005b;
-          margin: 0 auto;
-          border-radius: 10px;
-          display: flex;
-          align-items: center;
-          justify-content: center; }
-          .section-content .article-my-works .my-works-container .my-works-row figure a img {
-            transform: scale(1);
-            transition: all 0.3s ease-in-out;
-            width: 120px; }
-          .section-content .article-my-works .my-works-container .my-works-row figure a:hover {
-            background-color: #f4f4f4; }
-            .section-content .article-my-works .my-works-container .my-works-row figure a:hover img {
-              transform: scale(1.2); }
+      .section-content .article-my-works .my-works-container .my-works-row .my-works {
+        margin-bottom: 3.5rem;
+        background-color: white;
+        position: relative;
+        display: none; }
+        .section-content .article-my-works .my-works-container .my-works-row .my-works .my-detail-works {
+          border: 1px solid #e1e1e1;
+          margin: 0 10px; }
+          .section-content .article-my-works .my-works-container .my-works-row .my-works .my-detail-works .link-image {
+            display: block;
+            margin-bottom: 40px; }
+            .section-content .article-my-works .my-works-container .my-works-row .my-works .my-detail-works .link-image img {
+              height: auto;
+              display: block; }
+          .section-content .article-my-works .my-works-container .my-works-row .my-works .my-detail-works .btn-visit {
+            border: none;
+            background-color: #2e4152;
+            color: #ffffff;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out; }
+            .section-content .article-my-works .my-works-container .my-works-row .my-works .my-detail-works .btn-visit:hover {
+              color: #ffffff;
+              background-color: #fb005b; }
 
 @media (max-width: 549px) {
   .section-content .article-skills .skills-container .skills-row .label-skills-columns .label-skills {
