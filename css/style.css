@@ -7,6 +7,12 @@ figure {
 img {
   max-width: 100%; }
 
+.percent_80 {
+  width: 80%; }
+
+.percent_75 {
+  width: 75%; }
+
 .header-portfolio {
   position: relative;
   height: 600px;
@@ -243,12 +249,32 @@ img {
       text-align: center;
       text-transform: uppercase;
       font-weight: bold; }
+    .section-content .article-skills .sub-title {
+      margin-bottom: 3.5rem; }
     .section-content .article-skills hr {
       border-top: 3px solid #2e4152;
       width: 60px; }
     .section-content .article-skills .skills-container {
       max-width: 640px;
       margin: 0 auto;
-      position: relative; }
+      padding: 0 10px; }
+      .section-content .article-skills .skills-container .skills-row {
+        margin-bottom: 10px; }
+        .section-content .article-skills .skills-container .skills-row .label-skills-columns .label-skills {
+          text-align: right; }
+        .section-content .article-skills .skills-container .skills-row .percentage-skills-columns {
+          display: flex;
+          align-items: center; }
+          .section-content .article-skills .skills-container .skills-row .percentage-skills-columns .percentages-line, .section-content .article-skills .skills-container .skills-row .percentage-skills-columns .percentages-number {
+            display: inline-block; }
+          .section-content .article-skills .skills-container .skills-row .percentage-skills-columns .percentages-line {
+            height: 5px;
+            background-color: #fb005b; }
+          .section-content .article-skills .skills-container .skills-row .percentage-skills-columns .percentages-number {
+            margin-left: 10px; }
+
+@media (max-width: 549px) {
+  .section-content .article-skills .skills-container .skills-row .label-skills-columns .label-skills {
+    text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */

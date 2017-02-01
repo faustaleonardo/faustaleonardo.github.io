@@ -15,6 +15,13 @@ img{
 	max-width: 100%;
 }
 
+.percent_80{
+	width: 80%;
+}
+.percent_75{
+	width: 75%;
+}
+
 .header-portfolio{
 	position: relative;
 	height: 600px;
@@ -293,6 +300,7 @@ img{
 							}
 						}
 					}
+				
 				}
 			}
 		}
@@ -309,6 +317,9 @@ img{
 			text-transform: uppercase;
 			font-weight: bold;
 		}
+		.sub-title{
+			margin-bottom: 3.5rem;
+		}
 		hr{
 		    border-top: 3px solid $super_dark_grey;
 		    width: 60px;			
@@ -316,7 +327,46 @@ img{
 		.skills-container{
 			max-width: 640px;
 			margin: 0 auto;
-			position: relative; 
+			padding: 0 10px;
+			.skills-row{
+				margin-bottom: 10px;
+				.label-skills-columns{
+					.label-skills{
+						text-align: right;
+					}
+				}
+				.percentage-skills-columns{
+					display: flex;
+					align-items: center;
+					.percentages-line, .percentages-number{
+						display: inline-block;
+					}
+					.percentages-line{
+						height: 5px;
+						background-color: $pink;
+					}
+					.percentages-number{
+						margin-left: 10px;
+					}
+				}
+			}
 		}
 	}	
+}
+
+// phone
+@media (max-width: 549px) {
+	.section-content{
+		.article-skills{
+			.skills-container{
+				.skills-row{
+					.label-skills-columns{
+						.label-skills{
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
+	}
 }

@@ -34,6 +34,22 @@ $(document).ready(function(){
 					$('.my-services-container figure').eq(i).addClass('is-showing');
 				}, 150 * (i+1));
 			});
-		}		
+		}
+
+		// animation for skills
+		if (wScroll > ($('.skills-container').offset().top - $(window).height())){
+			// i starts with 0
+			$('.skills-container .percentages-line').each(function(i){
+				var percentages_number = $('.skills-container .percentages-line').eq(i).next().text();
+				setTimeout(function(){
+					if(!$('.skills-container .percentages-line').eq(i).hasClass('animation_complete')){
+						$('.skills-container .percentages-line').eq(i).animate({
+							'width': percentages_number
+						}, 700).addClass('animation_complete');
+					}
+				}, 300 * (i+1));
+			});
+		}
+
 	});
 });
