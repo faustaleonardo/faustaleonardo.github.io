@@ -56,9 +56,7 @@ $(document).ready(function(){
 			// i starts with 0
 			$('.my-works').each(function(i){
 				setTimeout(function(){
-					if (!$('.my-works').eq(i).hasClass('animation_complete')){
-						$('.my-works').eq(i).fadeIn('slow');
-					}
+					$('.my-works-row .my-works').eq(i).addClass('is-showing');
 				}, 200 * (i+1));
 			});
 		}

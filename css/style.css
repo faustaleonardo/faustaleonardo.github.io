@@ -289,7 +289,15 @@ img {
         margin-bottom: 3.5rem;
         background-color: white;
         position: relative;
-        display: none; }
+        opacity: 0;
+        transition: all 0.3s ease-in-out; }
+        .section-content .article-my-works .my-works-container .my-works-row .my-works:first-child {
+          transform: translateX(-20px); }
+        .section-content .article-my-works .my-works-container .my-works-row .my-works:nth-child(2) {
+          transform: translateX(20px); }
+        .section-content .article-my-works .my-works-container .my-works-row .my-works.is-showing {
+          opacity: 1;
+          transform: translateX(0px); }
         .section-content .article-my-works .my-works-container .my-works-row .my-works .my-detail-works {
           border: 1px solid #e1e1e1;
           margin: 0 10px; }
@@ -308,6 +316,47 @@ img {
             .section-content .article-my-works .my-works-container .my-works-row .my-works .my-detail-works .btn-visit:hover {
               color: #ffffff;
               background-color: #fb005b; }
+  .section-content .article-contact {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 80px; }
+    .section-content .article-contact h3, .section-content .article-contact .sub-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .section-content .article-contact .sub-title {
+      margin-bottom: 3.5rem; }
+    .section-content .article-contact hr {
+      border-top: 3px solid #2e4152;
+      width: 60px; }
+    .section-content .article-contact .contact-container {
+      max-width: 640px;
+      margin: 0 auto;
+      position: relative; }
+      .section-content .article-contact .contact-container .contact-row {
+        margin-bottom: 10px; }
+        .section-content .article-contact .contact-container .contact-row .detail-icon-contact {
+          margin: 0 auto;
+          border-radius: 5px;
+          width: 70px;
+          height: 70px;
+          background: #fb005b;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .section-content .article-contact .contact-container .contact-row .detail-icon-contact img {
+            width: 25px;
+            display: block;
+            margin: 0 auto; }
+        .section-content .article-contact .contact-container .contact-row h5 {
+          text-transform: uppercase;
+          display: inline-block;
+          font-weight: bold;
+          margin-top: 10px;
+          margin-bottom: 0; }
 
 @media (max-width: 549px) {
   .section-content .article-skills .skills-container .skills-row .label-skills-columns .label-skills {

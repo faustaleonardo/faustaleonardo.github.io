@@ -373,7 +373,18 @@ img{
 					margin-bottom: 3.5rem;
 					background-color: white;
 					position: relative;
-					display: none;
+					opacity: 0;
+					transition: all 0.3s ease-in-out;
+					&:first-child{
+						transform: translateX(-20px);
+					}
+					&:nth-child(2){
+						transform: translateX(20px);
+					}
+					&.is-showing{
+						opacity: 1;
+						transform: translateX(0px);
+					} 
 				    .my-detail-works{
 					    border: 1px solid $border_grey;
 					    margin: 0 10px;
@@ -400,6 +411,56 @@ img{
 				}
 			}
 		}
+	}
+	.article-contact{
+		background-color: $grey;
+		text-align: center;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		margin-top: 40px;
+		margin-bottom: 80px;
+		h3, .sub-title{
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		.sub-title{
+			margin-bottom: 3.5rem;
+		}
+		hr{
+		    border-top: 3px solid $super_dark_grey;
+		    width: 60px;			
+		}
+		.contact-container{
+			max-width: 640px;
+			margin: 0 auto;
+			position: relative; 			
+			.contact-row{
+				margin-bottom: 10px;
+				.detail-icon-contact{
+					margin: 0 auto;
+					border-radius: 5px;	
+				    width: 70px;
+				    height: 70px;
+				    background: $pink;
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;					
+				    img{
+					    width: 25px;
+					    display: block;
+					    margin: 0 auto;				    	
+				    }
+				}
+				h5{
+					text-transform: uppercase;
+					display: inline-block;
+					font-weight: bold;
+					margin-top: 10px;
+					margin-bottom: 0;
+				}
+			}
+		}	
 	}
 }
 
