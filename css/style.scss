@@ -351,7 +351,50 @@ img{
 				}
 			}
 		}
-	}	
+	}
+	.article-my-works{
+		text-align: center;
+		h3{
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		hr{
+		    border-top: 3px solid $super_dark_grey;
+		    width: 60px;			
+		}
+		.my-works-container{
+			max-width: 640px;
+			margin: 0 auto;
+			position: relative; 
+			.my-works-row{
+				figure{
+					margin-bottom: 3.5rem;
+					a{
+					    width: 200px;
+					    height: 200px;
+					    border: 1px solid $pink;
+					    margin: 0 auto;
+					    border-radius: 10px;
+					    display: flex;
+					    align-items: center;
+					    justify-content: center;
+					    img{
+						    transform: scale(1);
+						    transition: all 0.3s ease-in-out; 
+						    width: 120px;
+					    }
+					    &:hover{
+					    	background-color: $grey;
+					    	img{
+					    		transform: scale(1.2);
+					    	}
+					    }
+					}
+				}
+			}
+		}
+	}
 }
 
 // phone

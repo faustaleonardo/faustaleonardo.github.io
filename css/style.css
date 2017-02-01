@@ -272,6 +272,38 @@ img {
             background-color: #fb005b; }
           .section-content .article-skills .skills-container .skills-row .percentage-skills-columns .percentages-number {
             margin-left: 10px; }
+  .section-content .article-my-works {
+    text-align: center; }
+    .section-content .article-my-works h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .section-content .article-my-works hr {
+      border-top: 3px solid #2e4152;
+      width: 60px; }
+    .section-content .article-my-works .my-works-container {
+      max-width: 640px;
+      margin: 0 auto;
+      position: relative; }
+      .section-content .article-my-works .my-works-container .my-works-row figure {
+        margin-bottom: 3.5rem; }
+        .section-content .article-my-works .my-works-container .my-works-row figure a {
+          width: 200px;
+          height: 200px;
+          border: 1px solid #fb005b;
+          margin: 0 auto;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .section-content .article-my-works .my-works-container .my-works-row figure a img {
+            transform: scale(1);
+            transition: all 0.3s ease-in-out;
+            width: 120px; }
+          .section-content .article-my-works .my-works-container .my-works-row figure a:hover {
+            background-color: #f4f4f4; }
+            .section-content .article-my-works .my-works-container .my-works-row figure a:hover img {
+              transform: scale(1.2); }
 
 @media (max-width: 549px) {
   .section-content .article-skills .skills-container .skills-row .label-skills-columns .label-skills {
