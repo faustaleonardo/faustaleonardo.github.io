@@ -9,6 +9,11 @@
   -webkit-columns: 2;
   -moz-columns: 2;
 }
+.three-columns-list {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
 .project-card {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   padding: 1.5rem;
